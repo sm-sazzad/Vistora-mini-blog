@@ -6,14 +6,10 @@ import Category from "@/Components/Category";
 const Home = () => {
   return (
     <>
-      <Navbar />
-
       <main>
         <Banner />
         <Category />
       </main>
-
-      <Footer />
     </>
   );
 };
