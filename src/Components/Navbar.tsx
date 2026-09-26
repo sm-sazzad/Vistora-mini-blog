@@ -34,12 +34,12 @@ const Navbar = () => {
             About
           </Link>
 
-          <Link
-            href="/contact"
+          <a
+            href="/#contact"
             className="text-sm font-medium text-[#171717] transition-colors hover:text-[#173B6C]"
           >
             Contact
-          </Link>
+          </a>
         </div>
 
         {/* Search */}

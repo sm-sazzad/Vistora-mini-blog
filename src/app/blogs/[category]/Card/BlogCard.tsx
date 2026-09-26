@@ -1,6 +1,5 @@
 import { Result } from "@/lib/DataType";
 import Link from "next/link";
-import React from "react";
 
 const BlogCard = ({ singleResults }: { singleResults: Result }) => {
   const {

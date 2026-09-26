@@ -8,7 +8,6 @@ const getData = async (category: string, page: number): Promise<IData> => {
     `https://content.guardianapis.com/search?section=${category}&type=article&page=${page}&&show-fields=thumbnail,trailText,byline&api-key=${process.env.GUARDIAN_API_KEY}`,
   );
   const data = await res.json();
-  //   console.log(data, "fetch");
   return data;
 };
 
@@ -35,7 +34,7 @@ const page = async ({
         </p>
 
         <h1 className="mt-2 text-4xl font-bold text-white">
-          Latest from {category}
+          Latest from {results[0].sectionName}
         </h1>
       </div>
       <div className="grid grid-cols-3 justify-center gap-5 max-w-7xl mx-auto">
