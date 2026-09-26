@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: "https",
-        hostname: "media.guim.co.uk",
+        hostname: "**",
       },
     ],
   },

@@ -2,6 +2,11 @@ import { IData } from "@/lib/DataType";
 import BlogCard from "./Card/BlogCard";
 import Link from "next/link";
 import { FaArrowLeftLong, FaArrowRightLong } from "react-icons/fa6";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Bolgs",
+};
 
 const getData = async (category: string, page: number): Promise<IData> => {
   const res = await fetch(
@@ -37,7 +42,7 @@ const page = async ({
           Latest from {results[0].sectionName}
         </h1>
       </div>
-      <div className="grid grid-cols-3 justify-center gap-5 max-w-7xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 justify-center gap-5 w-[90%] sm:max-w-7xl mx-auto">
         {results.map((singleResults) => (
           <BlogCard key={singleResults.id} singleResults={singleResults} />
         ))}

@@ -21,21 +21,21 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href="/categories"
+            href="/blogs"
             className="text-sm font-medium text-[#171717] transition-colors hover:text-[#173B6C]"
           >
             Categories
           </Link>
 
           <Link
-            href="/about"
+            href="/about-me"
             className="text-sm font-medium text-[#171717] transition-colors hover:text-[#173B6C]"
           >
             About
           </Link>
 
           <a
-            href="/#contact"
+            href="/"
             className="text-sm font-medium text-[#171717] transition-colors hover:text-[#173B6C]"
           >
             Contact

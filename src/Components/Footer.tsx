@@ -1,4 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
+import footer from "@/assets/footer.png";
 
 const Footer = () => {
   return (
@@ -7,7 +9,7 @@ const Footer = () => {
         <div className="grid gap-10 md:grid-cols-4">
           {/* Brand */}
           <div>
-            <h2 className="text-2xl font-bold text-white">Vistora</h2>
+            <Image src={footer} alt="vistora" className="h-15 w-fit"></Image>
 
             <p className="mt-4 max-w-xs text-sm leading-6 text-gray-400">
               Discover stories, ideas, places, and perspectives from around the
@@ -43,15 +45,15 @@ const Footer = () => {
             <h3 className="font-semibold text-white">Company</h3>
 
             <div className="mt-4 space-y-3 text-sm">
-              <Link href="/about" className="block hover:text-white">
+              <Link href="/about-me" className="block hover:text-white">
                 About
               </Link>
 
-              <Link href="/contact" className="block hover:text-white">
+              <Link href="/" className="block hover:text-white">
                 Contact
               </Link>
 
-              <Link href="/privacy" className="block hover:text-white">
+              <Link href="/" className="block hover:text-white">
                 Privacy
               </Link>
             </div>
